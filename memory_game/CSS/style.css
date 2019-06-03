@@ -12,19 +12,21 @@ a {
 
 p {
 font-family: "Raleway", serif;
+
 }
 body {
 text-align: center;
+background-color: rgba(0,0,0,.5);
 
 margin: 0;
 }
 header{
-	background-color: rgb(255,0,5);
+	background-color: rgb(255,0,50);
 	color:#FFFFFF;
 	padding: 30px 20px;
 }
 nav{
-	background-color: #00A6B3;
+	background-color: #0D2C40;
 	color:#FFFFFF;
 	padding: 20px 0;
 }
@@ -37,6 +39,7 @@ img{
 	height: 279px;
 	width: 175px;
 }
+
 a:hover{
 	background-color: rgba(255,2,20,.5);
 }
@@ -60,6 +63,18 @@ font-size: 0;
 	color: #F15B31;
 	font-weight: 700;
 
+}
+.instructions{
+	color:white;
+}
+.gamePage{
+	
+		font-family: "Baloo Da", sans-serif;
+		
+			color:#FFFFFF;
+	
+
+	
 }
 footer{
   text-transform: uppercase;
