@@ -49,19 +49,14 @@ if (cardsInPlay.length === 2) {
  			
  				}
 											}
-function score() {
-counter++;
-console.log("Score: "+counter);
- 													
-											}											
-
 if (cardsInPlay.length === 4) {
 	
  	if (cardsInPlay[2] === cardsInPlay[3]) {
  			alert("You found a match!"); 
  			score();
  			setTimeout(reset,3000); 			}
- 				else { 
+ 			
+ 		else { 
  			console.log("Try Again!");
  			
  				}
@@ -69,7 +64,14 @@ if (cardsInPlay.length === 4) {
 
 };
 
-	function flipCard(){
+function score() {
+counter++;
+console.log("Score: "+counter);
+ 													
+					};
+
+
+function flipCard(){
 	var cardId = this.getAttribute('data-id');
 	this.setAttribute('src', cards[cardId].cardImage);
 	//console.log("User flipped "+ cards[cardId].rank);
