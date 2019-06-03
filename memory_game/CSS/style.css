@@ -34,6 +34,8 @@ main{
 }
 img{
 	margin: 40px 8px;
+	height: 279px;
+	width: 175px;
 }
 a:hover{
 	background-color: rgba(255,2,20,.5);
