@@ -1,11 +1,13 @@
 h1 {
-font-family: "Raleway", sans-serif;
-font-weight: 400;
+font-family: "Baloo Da", sans-serif;
+font-weight: 700;
 margin: 0;
+font-size: 50px;
 }
 a {
 	color: white;
 	margin: 0 20px;
+	font-family: "Baloo Da", sans-serif;
 }
 
 p {
@@ -17,7 +19,7 @@ text-align: center;
 margin: 0;
 }
 header{
-	background-color: #F15B31;
+	background-color: rgb(255,0,5);
 	color:#FFFFFF;
 	padding: 30px 20px;
 }
@@ -34,7 +36,7 @@ img{
 	margin: 40px 8px;
 }
 a:hover{
-	background-color: #FFFFFF;
+	background-color: rgba(255,2,20,.5);
 }
 .copyright{
 float: left;

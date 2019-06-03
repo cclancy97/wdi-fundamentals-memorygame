@@ -28,29 +28,38 @@ var	cards = [
 
  
 var cardsInPlay = [];
+var counter = 0;
 
 var reset = function(){
   document.getElementById("game-board").innerHTML = "";
 createBoard();
 cardsInPlay = [];
+
 };
 
 function checkForMatch(){
 if (cardsInPlay.length === 2) {
 	
  	if (cardsInPlay[0] === cardsInPlay[1]) {
- 			alert("You found a match!");
- 			}
- 				else { 
+ 			alert("You found a match!"); 
+ 			score();
+	}
+		else { 
  			console.log("Try Again!");
  			
  				}
 											}
+function score() {
+counter++;
+console.log("Score: "+counter);
+ 													
+											}											
 
 if (cardsInPlay.length === 4) {
 	
  	if (cardsInPlay[2] === cardsInPlay[3]) {
- 			alert("You found a match!");
+ 			alert("You found a match!"); 
+ 			score();
  			setTimeout(reset,3000); 			}
  				else { 
  			console.log("Try Again!");
@@ -69,7 +78,8 @@ if (cardsInPlay.length === 4) {
 	
 	cardsInPlay.push(cards[cardId].rank);
 
-	checkForMatch();
+	
+	setTimeout(checkForMatch,100);
 };	
 
 function createBoard(){
@@ -95,3 +105,4 @@ function createBoard(){
 
 
 createBoard();
+
