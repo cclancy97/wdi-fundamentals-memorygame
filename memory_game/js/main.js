@@ -66,8 +66,7 @@ if (cardsInPlay.length === 4) {
 
 function score() {
 counter++;
-console.log("Score: "+counter);
- 													
+document.getElementById('score').innerHTML = counter;			
 					};
 
 
@@ -90,21 +89,9 @@ function createBoard(){
 		cardElement.setAttribute('src',"images/back.png");
 		cardElement.setAttribute('data-id', i);
 		cardElement.addEventListener('click',flipCard);
-
-		
 		document.getElementById('game-board').appendChild(cardElement);}
 
 
 };
 
-
-
-
-
-
-
-
-
-
 createBoard();
-
