@@ -73,8 +73,13 @@ font-size: 0;
 		
 			color:#FFFFFF;
 	
-
-	
+}
+#score{
+	color:#FFFFFF;
+	text-align: center;
+}
+.displayScore{
+	text-align:center;
 }
 footer{
   text-transform: uppercase;
