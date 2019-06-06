@@ -43,6 +43,15 @@ img{
 a:hover{
 	background-color: rgba(255,2,20,.5);
 }
+button{
+	color:rgb(255,0,50);
+	background-color: #0D2C40;
+	font-family: "Baloo Da";
+	font-size: 20px;
+	padding: 20px 50px;
+	border:#0D2C40;
+	border-radius: 3px;
+}
 .copyright{
 float: left;
 }
@@ -76,6 +85,8 @@ font-size: 0;
 }
 #score{
 	color:#FFFFFF;
+	font-family: "Baloo Da";
+	font-weight: 5px;
 	text-align: center;
 }
 .displayScore{

@@ -34,8 +34,15 @@ var reset = function(){
   document.getElementById("game-board").innerHTML = "";
 createBoard();
 cardsInPlay = [];
-
 };
+
+function resetScore() {
+	counter = 0;
+	document.getElementById('score').innerHTML = counter;
+	reset();
+	alert("Score Reset!");
+
+}
 
 function checkForMatch(){
 if (cardsInPlay.length === 2) {
